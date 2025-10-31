@@ -14,10 +14,10 @@ export default function Filters({ categories, selected, onChange }: Props) {
       <button
         type="button"
         onClick={() => onChange("")}
-        className={`h-9 rounded-full border px-4 text-sm transition-colors ${
+        className={`h-10 rounded-lg border px-5 text-sm font-medium transition-all duration-200 ${
           selected === ""
-            ? "bg-black text-white dark:bg-white dark:text-black"
-            : "bg-transparent text-black dark:text-white border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10"
+            ? "bg-[#1e3a5f] text-white border-[#1e3a5f] shadow-md dark:bg-[#4a90a4] dark:border-[#4a90a4]"
+            : "bg-transparent text-[#64748b] dark:text-[#94a3b8] border-[#e2e8f0] dark:border-[#2d3748] hover:bg-[#f8fafc] dark:hover:bg-[#2d3748] hover:border-[#1e3a5f] dark:hover:border-[#4a90a4]"
         }`}
       >
         Semua
@@ -27,10 +27,10 @@ export default function Filters({ categories, selected, onChange }: Props) {
           key={c}
           type="button"
           onClick={() => onChange(c)}
-          className={`h-9 rounded-full border px-4 text-sm transition-colors ${
+          className={`h-10 rounded-lg border px-5 text-sm font-medium transition-all duration-200 ${
             selected === c
-              ? "bg-black text-white dark:bg-white dark:text-black"
-              : "bg-transparent text-black dark:text-white border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10"
+              ? "bg-[#1e3a5f] text-white border-[#1e3a5f] shadow-md dark:bg-[#4a90a4] dark:border-[#4a90a4]"
+              : "bg-transparent text-[#64748b] dark:text-[#94a3b8] border-[#e2e8f0] dark:border-[#2d3748] hover:bg-[#f8fafc] dark:hover:bg-[#2d3748] hover:border-[#1e3a5f] dark:hover:border-[#4a90a4]"
           }`}
         >
           {c}
@@ -39,5 +39,3 @@ export default function Filters({ categories, selected, onChange }: Props) {
     </div>
   );
 }
-
-
