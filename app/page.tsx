@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-[#1e3a5f] via-[#2d4a6a] to-[#4a90a4] dark:from-[#1a2332] dark:via-[#1e3a5f] dark:to-[#2d4a6a]">
+      <div className="bg-gradient-to-br from-[#416798] via-[#2d4a6a] to-[#4a90a4] dark:from-[#1a2332] dark:via-[#1e3a5f] dark:to-[#2d4a6a]">
         <div className="mx-auto max-w-6xl px-5 py-12">
           <div className="text-center mb-8">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
