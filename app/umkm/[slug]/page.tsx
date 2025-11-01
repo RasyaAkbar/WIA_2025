@@ -15,7 +15,7 @@ export default async function UmkmDetail({ params }: Props) {
   if (!umkm) {
     return (
       <div className="min-h-screen">
-        <main className="mx-auto max-w-4xl px-5 py-10">
+        <main className="mx-auto max-w-4xl px-5 py-10 pt-24">
           <div className="text-center py-12 bg-white dark:bg-[#1a2332] rounded-xl border border-[#e2e8f0] dark:border-[#2d3748]">
             <div className="text-4xl mb-4">❌</div>
             <p className="text-base text-[#64748b] dark:text-[#94a3b8] mb-4">UMKM tidak ditemukan</p>
@@ -33,7 +33,7 @@ export default async function UmkmDetail({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] dark:bg-[#0f1419]">
-      <main className="mx-auto max-w-5xl px-5 py-8">
+      <main className="mx-auto max-w-5xl px-5 py-8 pt-28">
         <nav className="mb-6">
           <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-[#4a90a4] hover:text-[#1e3a5f] dark:hover:text-[#d4a855] transition-colors">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
