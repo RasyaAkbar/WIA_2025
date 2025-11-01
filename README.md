@@ -27,7 +27,7 @@ Proyek ini dibangun menggunakan teknologi modern berikut:
 
 1. **Clone repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/RasyaAkbar/WIA_2025
    cd WIA_2025
    ```
 
