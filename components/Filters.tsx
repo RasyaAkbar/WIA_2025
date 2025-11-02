@@ -1,6 +1,6 @@
 "use client";
 
-import type { UmkmCategory } from "../data/umkm";
+import type { UmkmCategory } from "../app/data/umkm";
 
 type Props = {
   categories: UmkmCategory[];

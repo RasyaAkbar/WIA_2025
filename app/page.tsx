@@ -1,9 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import SearchBar from "./components/SearchBar";
-import Filters from "./components/Filters";
-import UmkmCard from "./components/UmkmCard";
+import SearchBar from "../components/SearchBar";
+import Filters from "../components/Filters";
+import {UmkmCard} from "../components/UmkmCard";
+import { TrendingSection } from "@/components/TrendingSection";
 import { UMKMS, CATEGORIES } from "./data/umkm";
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-[#1e3a5f] via-[#2d4a6a] to-[#4a90a4] dark:from-[#1a2332] dark:via-[#1e3a5f] dark:to-[#2d4a6a] pt-24">
+      <div className="bg-gradient-to-br from-[#416798] via-[#2d4a6a] to-[#4a90a4] dark:from-[#1a2332] dark:via-[#1e3a5f] dark:to-[#2d4a6a] pt-24">
         <div className="mx-auto max-w-6xl px-5 py-12">
           <div className="text-center mb-8">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -44,8 +45,13 @@ export default function Home() {
         </div>
       </div>
 
+      
+
       {/* Results Section */}
       <main className="mx-auto max-w-6xl px-5 py-10">
+        {q.length === 0 && !category && (
+          <TrendingSection umkmList={UMKMS}/>
+        )}
         <div className="mb-6">
           <p className="text-sm text-[#1e3a5f] dark:text-[#4a90a4] font-medium">
             {results.length} UMKM ditemukan
@@ -66,7 +72,7 @@ export default function Home() {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {results.map((u) => (
-                <UmkmCard key={u.slug} umkm={u} />
+                <UmkmCard key={u.slug} umkm={u}/>
               ))}
             </div>
           )}
