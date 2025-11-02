@@ -73,9 +73,9 @@ export const UMKMS: Umkm[] = [
     ],
   },
   {
-    slug: "laundry-kilat-bersih",
-    name: "Laundry Kilat Bersih",
-    category: "Jasa",
+    slug: "DJOEANG",
+    name: "DJOEANG",
+    category: "Toko",
     description:
       "Layanan laundry cepat selesai dalam 24 jam dengan harga terjangkau.",
     address: "Jl. Mawar No. 78, Harapan Baru",
