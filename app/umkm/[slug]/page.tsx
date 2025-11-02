@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { UMKMS } from "@/app/data/umkm";
-import MapEmbed from "@/app/components/MapEmbed";
-import Gallery from "@/app/components/Gallery";
+import MapEmbed from "@/components/MapEmbed";
+import Gallery from "@/components/Gallery";
 
 type Props = {
   params: Promise<{ slug: string }>;
